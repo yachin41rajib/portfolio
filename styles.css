@@ -27,11 +27,6 @@ font-size: 17px;
 header-text {
     text-align: left;
 
-}
-
-.header-image img {
-    max-width: 100px; /* Adjust the image width as needed */
-}
 
 section {
     padding: 20px;
@@ -67,6 +62,12 @@ margin-bottom: 0px;
 margin-top: 0px;
 }
 
+section u1 li {
+    font-size: 20px;
+   
+margin-bottom: 10px; 
+margin-top: 10px;
+}
 /* Project Section Styles */
 .project {
     margin-bottom: 0px;
@@ -86,6 +87,18 @@ margin-top: 0px;
     color: #007BFF;
 }
 
+/* Additional styles for the contact section */
+#contact p {
+    font-size: 16px;
+    color: #333; /* Change the color as needed */
+    margin-bottom: 10px; /* Adjust the margin between lines (optional) */
+}
+
+#contact li a {
+    color: #007BFF; /* Change the color to highlight the email */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the email text bold (optional) */
+}
 /* Footer Styles */
 footer {
     text-align: center;
