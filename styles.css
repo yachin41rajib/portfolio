@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+    background-color: #BFC9CA;
+    padding: 50px;
+    font-size: 25px;
+}
+
+header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header p {
+font-size: 17px;
+}
+
+header-text {
+    text-align: left;
+
+}
+
+.header-image img {
+    max-width: 100px; /* Adjust the image width as needed */
+}
+
+section {
+    padding: 20px;
+margin-bottom: 0px;
+margin-top: 0px;
+}
+
+/* Add more custom styles for your portfolio as needed */
+}
+nav ul {
+    list-style: none;
+    padding: 40px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 40px;
+margin-top: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2471A3;
+    font-weight: bold;
+    font-size: 21px;
+text-decoration-line: underline;
+margin-bottom: 0px;
+}
+
+section {
+    padding: 90px; 
+margin-bottom: 0px; 
+margin-top: 0px;
+}
+
+/* Project Section Styles */
+.project {
+    margin-bottom: 0px;
+}
+
+.project h3 {
+    margin: 0;
+}
+
+.project p {
+    color: #007BFF;
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
