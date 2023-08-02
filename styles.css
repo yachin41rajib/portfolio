@@ -10,7 +10,7 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    background-color: #BFC9CA;
+    background-image: linear-gradient(to bottom, #2171b5, #bdd7e7, #6baed6, #eff3ff );
     padding: 50px;
     font-size: 25px;
 }
@@ -116,4 +116,26 @@ footer {
     nav ul li {
         margin: 10px 0;
     }
+}
+/* Add this to your existing CSS */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #008080;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: none; /* Hide the button by default */
+}
+
+.back-to-top a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-to-top.show {
+    display: block; /* Show the button when the user scrolls down */
 }
