@@ -7,6 +7,7 @@ body {
     font-size: 18px;
 }
 
+/* Header Styles */
 header {
     text-align: center;
     background-color: #BFC9CA;
@@ -18,33 +19,28 @@ header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-}
-header p {
-font-size: 17px;
 }
 
 header-text {
     text-align: left;
-
-
-section {
-    padding: 20px;
-margin-bottom: 0px;
-margin-top: 0px;
 }
 
-/* Add more custom styles for your portfolio as needed */
+header p {
+    font-size: 17px;
 }
+
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 40px;
-margin-top: 0px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -52,101 +48,6 @@ nav ul li a {
     color: #2471A3;
     font-weight: bold;
     font-size: 21px;
-text-decoration-line: underline;
-margin-bottom: 0px;
-}
-
-section {
-    padding: 90px; 
-margin-bottom: 0px; 
-margin-top: 0px;
-}
-
-section u1 li {
-    font-size: 20px;
-   
-margin-bottom: 10px; 
-margin-top: 10px;
-}
-/* Project Section Styles */
-.project {
-    margin-bottom: 0px;
-}
-
-.project h3 {
-    margin: 0;
-}
-
-.project p {
-    color: #007BFF;
-}
-
-.project a {
-    display: block;
-    margin-top: 10px;
-    color: #007BFF;
-}
-
-/* Additional styles for the contact section */
-#contact p {
-    font-size: 16px;
-    color: #333; /* Change the color as needed */
-    margin-bottom: 10px; /* Adjust the margin between lines (optional) */
-}
-
-#contact li a {
-    color: #007BFF; /* Change the color to highlight the email */
-    text-decoration: none; /* Remove underline from the link */
-    font-weight: bold; /* Make the email text bold (optional) */
-}
-/* Media queries for responsive image resizing */
-@media screen and (max-width: 768px) {
-  .header-image img {
-    width: 100px; /* Adjust the width for smaller screens (e.g., mobile devices) */
-  }
-}
-
-  /* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-/* Additional style to center the footer on larger screens */
-@media screen and (min-width: 769px) {
-    footer {
-        text-align: center;
-    }
-}
-/* Media query for smaller screens (adjust the breakpoint as needed) */
-@media screen and (max-width: 768px) {
-  /* Add your mobile-specific navigation bar styles here */
-}
-/* Add this to your CSS for the navigation bar */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-nav li {
-  margin: 0 10px;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  background-color: none; /* Set a background color */
-  border-radius: 10px; /* Add some border-radius for a rounded look */
-}
-
-nav li {
-  margin: 0 10px;
 }
 
 nav li a {
@@ -154,20 +55,65 @@ nav li a {
   text-decoration: none;
   padding: 10px 5px;
 }
-
 nav li a:hover {
   background-color: #FFFFFF; /* Change background color on hover */
-    /* Media query for mobile view */
+  color: #007BFF; /* Change text color on hover */
+  border-radius: 0px; /* Add a rounded corner effect on hover */
+}
+/* Project Section Styles */
+section {
+    padding: 90px;
+}
+
+section u1 li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for the contact section */
+#contact p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#contact li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Media queries for responsive image resizing */
+@media screen and (max-width: 768px) {
+    .header-image img {
+        width: 100px; /* Adjust the width for smaller screens (e.g., mobile devices) */
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Additional style to center the footer on larger screens */
+@media screen and (min-width: 769px) {
+    footer {
+        text-align: center;
+    }
+}
+
+/* Media query for mobile view */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
-    nav li {
-        margin: 5px 0;
+    nav ul li {
+        margin: 10px 0;
     }
-}
-  color: #007BFF; /* Change text color on hover */
-  border-radius: 0px; /* Add a rounded corner effect on hover */
 }
