@@ -105,6 +105,16 @@ margin-top: 10px;
     width: 100px; /* Adjust the width for smaller screens (e.g., mobile devices) */
   }
 }
+
+    /* Responsive Font Styling for Mobile */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+}
 /* Footer Styles */
 footer {
     text-align: center;
