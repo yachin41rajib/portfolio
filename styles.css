@@ -106,16 +106,7 @@ margin-top: 10px;
   }
 }
 
-    /* Responsive Font Styling for Mobile */
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1.5rem; /* Adjust the font size for smaller screens */
-    }
-
-    p {
-        font-size: 1rem; /* Adjust the font size for smaller screens */
-    }
-}
-/* Footer Styles */
+  /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
@@ -127,4 +118,45 @@ footer {
     footer {
         text-align: center;
     }
+}
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
+  /* Add your mobile-specific navigation bar styles here */
+}
+/* Add this to your CSS for the navigation bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: none; /* Set a background color */
+  border-radius: 10px; /* Add some border-radius for a rounded look */
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav li a {
+  color: none; /* Set a text color */
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+nav li a:hover {
+  background-color: #FFFFFF; /* Change background color on hover */
+  color: #007BFF; /* Change text color on hover */
+  border-radius: 0px; /* Add a rounded corner effect on hover */
 }
