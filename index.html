@@ -130,3 +130,28 @@ I am eager to leverage my potential, adaptability, and expertise to contribute t
     </footer>
 </body>
 </html>
+<script>
+    // Function to toggle the "Back to Top" button visibility
+    function toggleBackToTopButton() {
+        const backToTopButton = document.querySelector('.back-to-top');
+        if (window.scrollY > 100) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    }
+
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Event listener for scrolling to toggle the button
+    window.addEventListener('scroll', toggleBackToTopButton);
+
+    // Event listener for clicking the button to scroll to the top
+    document.querySelector('.back-to-top').addEventListener('click', scrollToTop);
+</script>
