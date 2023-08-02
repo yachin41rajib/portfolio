@@ -99,6 +99,12 @@ margin-top: 10px;
     text-decoration: none; /* Remove underline from the link */
     font-weight: bold; /* Make the email text bold (optional) */
 }
+/* Media queries for responsive image resizing */
+@media screen and (max-width: 768px) {
+  .header-image img {
+    width: 100px; /* Adjust the width for smaller screens (e.g., mobile devices) */
+  }
+}
 /* Footer Styles */
 footer {
     text-align: center;
