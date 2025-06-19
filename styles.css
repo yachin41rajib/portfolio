@@ -84,9 +84,9 @@ section u1 li {
 }
 
 /* Media queries for responsive image resizing */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .header-image img {
-        width: 50px; /* Adjust the width for smaller screens (e.g., mobile devices) */
+        width: 100px; /* Adjust the width for smaller screens (e.g., mobile devices) */
     }
 }
 
