@@ -253,3 +253,14 @@ footer {
   text-align: justify;
   margin-bottom: 15px;
 }
+.main-content {
+  padding: 0 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .main-content {
+    padding: 0 20px;
+  }
+}
