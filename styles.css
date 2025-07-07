@@ -1,153 +1,175 @@
-/* Global Styles */
+/* Reset & Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-    font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  padding-top: 80px;
 }
 
-/* Header Styles */
+/* Header */
 header {
-    text-align: center;
-    background-image: linear-gradient(to bottom, #2171b5, #bdd7e7, #6baed6, #eff3ff );
-    padding: 50px;
-    font-size: 25px;
+  text-align: center;
+  background: linear-gradient(to bottom, #2171b5, #bdd7e7);
+  color: #fff;
+  padding: 50px 20px;
 }
 
-header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header-text {
-    text-align: left;
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 header p {
-    font-size: 17px;
+  font-size: 18px;
+  margin-top: 5px;
 }
 
-/* Navigation Styles */
+.header-image {
+  margin-top: 20px;
+}
+
+.header-image img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #f8f8f8;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 nav ul {
-    list-style: none;
-    padding: 40px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #2471A3;
-    font-weight: bold;
-    font-size: 21px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 nav li a {
-  color: none; /* Set a text color */
   text-decoration: none;
-  padding: 10px 5px;
+  color: #2171b5;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 nav li a:hover {
-  background-color: #FFFFFF; /* Change background color on hover */
-  color: #007BFF; /* Change text color on hover */
-  border-radius: 0px; /* Add a rounded corner effect on hover */
+  background-color: #e0e0e0;
+  color: #007BFF;
+  border-radius: 4px;
 }
-/* Project Section Styles */
+
+/* Sections */
 section {
-    padding: 90px;
+  padding: 60px 20px;
 }
 
-section u1 li {
-    font-size: 20px;
-    margin-bottom: 10px;
+section:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-/* Additional styles for the contact section */
-#contact p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #003366;
+  text-align: center;
 }
 
-#contact li a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
+ul, li {
+  margin-bottom: 10px;
 }
 
-/* Media queries for responsive image resizing */
-@media screen and (max-width: 768px) {
-    .header-image img {
-        width: 100px; /* Adjust the width for smaller screens (e.g., mobile devices) */
-    }
+.project h3 {
+  margin-top: 20px;
+  font-size: 22px;
 }
 
-/* Footer Styles */
+/* Contact */
+#contact li {
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-/* Additional style to center the footer on larger screens */
-@media screen and (min-width: 769px) {
-    footer {
-        text-align: center;
-    }
+.socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
 }
 
-/* Media query for mobile view */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
+.socials a:hover {
+  color: #00ffff;
 }
-/* Add this to your existing CSS */
+
+/* Back to Top Button */
 .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #008080;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    display: none; /* Hide the button by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #008080;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: none;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.back-to-top a {
-    color: #fff;
-    text-decoration: none;
+.back-to-top:hover {
+  background-color: #006666;
+  transform: scale(1.05);
 }
 
 .back-to-top.show {
-    display: block; /* Show the button when the user scrolls down */
-}
-/* Reduce and control photo size */
-.profile-photo {
-    max-width: 250px; /* Max width on big screens */
-    width: 100%;      /* Responsive width */
-    height: auto;     /* Keep natural ratio */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    display: block;
-    margin: 20px auto;
+  display: block;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 
+  section {
+    padding: 40px 15px;
+  }
+}
