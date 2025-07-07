@@ -139,12 +139,15 @@ footer {
 .back-to-top.show {
     display: block; /* Show the button when the user scrolls down */
 }
-.header-image img {
-    max-width: 300px; /* Control size on desktop */
-    width: 100%;
-    height: auto;
+/* Reduce and control photo size */
+.profile-photo {
+    max-width: 250px; /* Max width on big screens */
+    width: 100%;      /* Responsive width */
+    height: auto;     /* Keep natural ratio */
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: block;
+    margin: 20px auto;
 }
+
 
