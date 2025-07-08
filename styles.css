@@ -324,3 +324,12 @@ footer {
   color: #888;
   user-select: text;
 }
+#experience ul {
+  padding-left: 20px;
+}
+
+#experience ul li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
